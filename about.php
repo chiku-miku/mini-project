@@ -1,3 +1,3 @@
 <?php
-    echo 'This is about php file';
+    echo 'This is about mini project';
 ?>
