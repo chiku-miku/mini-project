@@ -1,3 +1,3 @@
 <?php
-echo 'this is php file';
+    echo 'This is about php file';
 ?>
