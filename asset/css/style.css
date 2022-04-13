@@ -1,0 +1,24 @@
+
+.login-body {
+    /* background-image: url('https://media.istockphoto.com/photos/hands-protecting-personal-data-information-on-tablet-information-and-picture-id1325214557?b=1&k=20&m=1325214557&s=170667a&w=0&h=VV9UeVy2lFtf6Zc5Q128JUoOOmCrl4KhJVDMFSdMn_8=');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover; */
+}
+
+.login-wrapper{
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+}
+
+.mt-10{margin-top: 10px;}
+.mt-20{margin-top: 20px;}
+.mt-30{margin-top: 30px;}
+.mt-40{margin-top: 40px;}
+.mt-50{margin-top: 50px;}
