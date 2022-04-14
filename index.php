@@ -27,7 +27,3 @@
     
 </body>
 </html>
-
-    <?php
-    echo 'akash choudhary';
-?>
