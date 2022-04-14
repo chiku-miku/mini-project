@@ -10,6 +10,10 @@
     <!-- Menu Start -->
     <?php include('common/menu.php'); ?>
     <!-- End -->
-    
+
+
+    <!-- Menu Start -->
+    <?php include('common/footer.php'); ?>
+    <!-- End -->
 </body>
 </html>
