@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body class="login-body">
-    <!-- Menu -->
+    <!-- Menu Start -->
+    <?php include('common/menu.php'); ?>
+    <!-- End -->
+    
 </body>
 </html>
