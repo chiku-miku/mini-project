@@ -93,7 +93,7 @@
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="text-white">Link 1</a>
+              <a href="about.php" class="text-white">About us</a>
             </li>
             <li>
               <a href="#!" class="text-white">Link 2</a>
@@ -114,7 +114,7 @@
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="text-white">Link 1</a>
+              <a href="contact.php" class="text-white">Contact us</a>
             </li>
             <li>
               <a href="#!" class="text-white">Link 2</a>
@@ -135,7 +135,7 @@
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="text-white">Link 1</a>
+              <a href="signup.php" class="text-white">Signup Here</a>
             </li>
             <li>
               <a href="#!" class="text-white">Link 2</a>
@@ -156,7 +156,7 @@
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="text-white">Link 1</a>
+              <a href="login.php" class="text-white">Login Here</a>
             </li>
             <li>
               <a href="#!" class="text-white">Link 2</a>

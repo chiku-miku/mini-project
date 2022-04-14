@@ -12,45 +12,58 @@
     <!-- End -->
     
     <div class="container">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
-            <div class="panel panel-primary mt-30">
-                <div class="panel-heading">Contact Us</div>
-                <div class="panel-body">
-                    <div class="panel-group">
-                        <form action="" method="post">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input class="form-control" type="text" id="name" name="name" placeholder="Please Enter Your Name"> 
-                            </div>
-
-                            <div class="form-group">
-                                <label for="email">Email Id</label>
-                                <input class="form-control" type="email" id="email" name="email" placeholder="Please Enter Your Email Id"> 
-                            </div>
-
-                            <div class="form-group">
-                                <label for="mob">Mobile No</label>
-                                <input class="form-control" type="text" id="mob" name="mob" placeholder="Please Enter Your Mobile No">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="msg">Message</label>
-                                <div>
-                                    <textarea class="form-control" name="msg" id="msg" cols="70" rows="6" placeholder="Please Enter Your Message"></textarea>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="panel panel-primary mt-30">
+                    <div class="panel-heading">Contact Us</div>
+                    <div class="panel-body">
+                        <div class="panel-group">
+                            <form action="" method="post">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input class="form-control" type="text" id="name" name="name" placeholder="Please Enter Your Name"> 
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <div class="">
-                                    <button type="submit" class="btn btn-warning">SUBMIT</button>
+                                <div class="form-group">
+                                    <label for="email">Email Id</label>
+                                    <input class="form-control" type="email" id="email" name="email" placeholder="Please Enter Your Email Id"> 
                                 </div>
-                            </div>
-                        </form>
+
+                                <div class="form-group">
+                                    <label for="mob">Mobile No</label>
+                                    <input class="form-control" type="text" id="mob" name="mob" placeholder="Please Enter Your Mobile No">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="msg">Message</label>
+                                    <div>
+                                        <textarea class="form-control" name="msg" id="msg" cols="70" rows="6" placeholder="Please Enter Your Message"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="">
+                                        <button type="submit" class="btn btn-primary">SUBMIT</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.    
+            </p>
+            <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.    
+            </p>
+        </div>
     </div>
+    <!-- Menu Start -->
+    <?php include('common/footer.php'); ?>
+    <!-- End -->
 </body>
 </html>
