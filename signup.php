@@ -55,14 +55,14 @@
                                     </label>
                             </div>		
                             <div class="form-group">
-                                    <label  for="Caste"> Caste :</label>
-                                    <select name="Caste" id="Caste">
-                                    <option selected disabled>select</option>
-                                    <option value="OPEN">OPEN</option>
-                                    <option value="OBC">OBC</option>
-                                    <option value="SC">SC</option>
-                                    <option value="ST">ST</option>
-                                    </select>
+                                <label  for="Caste"> Caste :</label>
+                                <select name="Caste" id="Caste">
+                                <option selected disabled>select</option>
+                                <option value="OPEN">OPEN</option>
+                                <option value="OBC">OBC</option>
+                                <option value="SC">SC</option>
+                                <option value="ST">ST</option>
+                                </select>
                             </div>
                             <div class="form-group">
 			                	    <label for="dob"> Date of Birth : </label>
