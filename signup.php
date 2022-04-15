@@ -28,7 +28,7 @@
 		
 </style>
 <body>
-<div class="container">
+    <div class="container">
         <div class="col-md-3"></div>
         <div class="col-md-6">
             <div class="panel panel-primary mt-50">
@@ -37,66 +37,61 @@
                     <div class="panel-group">
                         <form action="" method="post">
                             <div class="form-group">
-			                	<label for="fname"> Name : </label>
-				  	        <div>
+			                	<label for="fname"> Name : </label>				  	       
 				  		        <input class="form-control" type="text" id="fname" name="fname" autocomplete="off">
 				            </div>
-			                </div><br><br>	
+			               
 			                <div class="form-group">
-                                    <label for="gender"> Gender: </label> 
-                                    <input type="radio" id="male" name="gender" value="male">
-                                    <label for = "male">Male</label>
+                                <label for="gender"> Gender: </label> 
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for = "male">Male</label>
 
-                                    <input type="radio" id="female" name="gender" value="female"> 
-                                    <label for = "female">Female</label>	
+                                <input type="radio" id="female" name="gender" value="female"> 
+                                <label for = "female">Female</label>	
 
-                                    <input type="radio" id="transgender" name="gender" value="Transgender">	
-                                    <label for = "transgender"> Transgender
-                                    </label>
+                                <input type="radio" id="transgender" name="gender" value="Transgender">	
+                                <label for = "transgender"> Transgender
+                                </label>
                             </div>		
                             <div class="form-group">
-                                    <label  for="Caste"> Caste :</label>
-                                    <select name="Caste" id="Caste">
-                                    <option selected disabled>select</option>
-                                    <option value="OPEN">OPEN</option>
-                                    <option value="OBC">OBC</option>
-                                    <option value="SC">SC</option>
-                                    <option value="ST">ST</option>
-                                    </select>
+                                <label  for="Caste"> Caste :</label>
+                                <select class ='form-control' name="Caste" id="Caste">
+                                <option selected disabled>select</option>
+                                <option value="OPEN">OPEN</option>
+                                <option value="OBC">OBC</option>
+                                <option value="SC">SC</option>
+                                <option value="ST">ST</option>
+                                </select>
                             </div>
                             <div class="form-group">
-			                	    <label for="dob"> Date of Birth : </label>
-					        <div class="form-group">
-						            <input type="Date" name="dob" id= "dob" autocomplete="off">
+                                <label for="dob"> Date of Birth : </label>
+                                <input class ='form-control' type="Date" name="dob" id= "dob" autocomplete="off">
 			 		        </div>
 
 	 		                <div class="form-group">
-                                    <label  for="email"> Email :</label>
-				        	<div> 
-						            <input type="text" class="form-control" id="email" name="email" autocomplete="off">
+                                <label  for="email"> Email :</label>
+                                <input type="text" class="form-control" id="email" name="email" autocomplete="off">
 					        </div>
-			                </div>
-			                <div class="form-group">
-                                    <label for="mob"> Mobile no :</label>
-				 	        <div>
-				 		            <input type="text" class="form-control" id="mob" name="mob" autocomplete="off">	
+
+                            <div class="form-group">
+                                <label for="mob"> Mobile no :</label>
+                                <input type="text" class="form-control" id="mob" name="mob" autocomplete="off">	
 				 	        </div>
-                            </div>
+
                             <div class="form-group">
-			 	                    <label for="pic"> Profile pic : </label>
-                            <div class="form-group">
-                                      <input type="file" id="pic" name="pic">
+                                <label for="pic"> Profile pic : </label>
+                                <input type="file" id="pic" name="pic">
 				 	        </div>
-	 		                </div>
+	 		                
                             <div class="form-group">
-	    	            	<div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-primary">Submit</button>
 			            	</div>
-			          </div>
+                        </form>
+                    </div>
                 </div> 
-            </div> 
+            </div>
+        </div>
     </div>     
-</form>
 </body>
 </html>
 
