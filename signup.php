@@ -57,11 +57,11 @@
                             <div class="form-group">
                                 <label  for="Caste"> Caste :</label>
                                 <select name="Caste" id="Caste">
-                                <option selected disabled>select</option>
-                                <option value="OPEN">OPEN</option>
-                                <option value="OBC">OBC</option>
-                                <option value="SC">SC</option>
-                                <option value="ST">ST</option>
+                                    <option selected disabled>select</option>
+                                    <option value="OPEN">OPEN</option>
+                                    <option value="OBC">OBC</option>
+                                    <option value="SC">SC</option>
+                                    <option value="ST">ST</option>
                                 </select>
                             </div>
                             <div class="form-group">
