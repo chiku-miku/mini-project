@@ -1,3 +1,23 @@
+<?php
+    include('config.php');
+    if(isset($_POST['first_name'])){
+        // echo "<pre>";
+        // print_r($_POST);
+        // die();
+
+        $sql = "INSERT INTO users (first_name, middle_name, last_name, gender, date_of_birth, email_id, mobile_no, caste, created_at) 
+        VALUES ('".$_POST['first_name']."', '".$_POST['middle_name']."', '".$_POST['last_name']."', '".$_POST['gender']."', '".$_POST['date_of_birth']."', '".$_POST['email_id']."', '".$_POST['mobile_no']."', '".$_POST['caste']."', '".date('Y-m-d h:i:s')."')" ;
+
+        if (mysqli_query($conn, $sql)) {
+        echo "New record created successfully";
+        } else {
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        }
+
+        mysqli_close($conn);
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,49 +41,49 @@
                         <div class="panel-group">
                             <form action="" method="post">
                                 <div class="form-group">
-                                    <label for="fname">First Name</label>
-                                    <input class="form-control" type="text" id="fname" name="fname" placeholder="Please Enter Your First Name"> 
+                                    <label for="first_name">First Name</label>
+                                    <input class="form-control" type="text" id="first_name" name="first_name" placeholder="Please Enter Your First Name" required> 
                                 </div>
 
 								<div class="form-group">
-                                    <label for="mname">Middle Name</label>
-                                    <input class="form-control" type="text" id="mname" name="mname" placeholder="Please Enter Middle First Name"> 
+                                    <label for="middle_name">Middle Name</label>
+                                    <input class="form-control" type="text" id="middle_name" name="middle_name" placeholder="Please Enter Middle First Name" required> 
                                 </div>
 
 								<div class="form-group">
-                                    <label for="lname">Last Name</label>
-                                    <input class="form-control" type="text" id="lname" name="lname" placeholder="Please Enter Last First Name"> 
+                                    <label for="last_name">Last Name</label>
+                                    <input class="form-control" type="text" id="last_name" name="last_name" placeholder="Please Enter Last First Name" required> 
                                 </div>
 
 								<div class="form-group">
 		 							<label for="gender"> Gender : </label> 
-			 						<input type="radio" id="male" name="gender" value="male">
+			 						<input type="radio" id="male" name="gender" value="male" required>
 		 							<label for = "male">Male</label>
 
-			    					<input type="radio" id="female" name="gender" value="female"> 
+			    					<input type="radio" id="female" name="gender" value="female" required> 
 			    					<label for = "female">Female</label>	
 								</div>
 
 								<div class="form-group">
-									<label for="dob"> Date of Birth : </label>
+									<label for="date_of_birth"> Date of Birth : </label>
 									<div class="form-group">
-										<input type="Date" name="dob" id= "dob" ><br><br>
+										<input type="Date" name="date_of_birth" id= "date_of_birth" required><br><br>
 									</div>
 								</div>
 
                                 <div class="form-group">
-                                    <label for="email">Email Id</label>
-                                    <input class="form-control" type="email" id="email" name="email" placeholder="Please Enter Your Email Id"> 
+                                    <label for="email_id">Email Id</label>
+                                    <input class="form-control" type="email" id="email_id" name="email_id" placeholder="Please Enter Your Email Id" required> 
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="mob">Mobile No</label>
-                                    <input class="form-control" type="text" id="mob" name="mob" placeholder="Please Enter Your Mobile No">
+                                    <label for="mobile_no">Mobile No</label>
+                                    <input class="form-control" type="text" id="mobile_no" name="mobile_no" placeholder="Please Enter Your Mobile No" required>
                                 </div>
 
 								<div class="form-group">
-									<label for="Caste"> Caste :</label>
-									<select name="Caste" id="Caste">
+									<label for="caste"> Caste :</label>
+									<select name="caste" id="caste">
 									<option selected disabled>Select Your Caste</option>
 									<option value="OPEN">OPEN</option>
 									<option value="OBC">OBC</option>
