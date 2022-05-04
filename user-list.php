@@ -37,8 +37,7 @@
                                 <tbody>
                                     <?php
                                         $sql = "SELECT * FROM users";
-                                        $result = mysqli_query($conn, $sql);
-                                        
+                                        $result = mysqli_query($conn, $sql);                                                                     
                                         if(mysqli_num_rows($result) > 0){
                                             $i = 1;   
                                             while($row = mysqli_fetch_assoc($result)){
@@ -62,7 +61,7 @@
                                                     <td>
                                                         <a href="#" class="btn btn-info">Edit</a>&nbsp;&nbsp;
                                                         <a href="#" class="btn btn-primary">Update</a>&nbsp;&nbsp;
-                                                        <a href="#" class="btn btn-danger">Delete</a>
+                                                        <a href="<?php echo "delete.php?id=" .$row ['id']; ?>" class="btn btn-danger">Delete</a>
                                                     </td>
                                                 </tr>
                                     <?php
