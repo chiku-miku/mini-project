@@ -1,3 +1,26 @@
+<?php
+    include "config.php";
+    if(isset($_POST['email']) && isset($_POST['password'])){
+
+        $sql = "SELECT * FROM users WHERE email_id = '".$_POST['email']."' AND password = '".md5($_POST['password'])."'";
+        $result = mysqli_query($conn, $sql);
+        $rowCount = mysqli_num_rows($result);
+
+        if($rowCount == 0){
+            $custom_error_message = 'please provide a valid username and password';
+        }
+
+        if ($result && $rowCount > 0) {
+            $queryResult = mysqli_fetch_assoc($result);
+            session_start();
+            $_SESSION["id"] = $queryResult['id'];
+            header("Location: http://localhost/mini-project/dashboard.php");
+        }
+        mysqli_close($conn);
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,15 +42,20 @@
                     <div class="panel-heading">Login</div>
                     <div class="panel-body">
                         <div class="panel-group">
-                            <form action="" method="post">
+                            <?php if(isset($custom_error_message)){?>
+                                <div class="alert alert-danger" role="alert">
+                                    <?php echo $custom_error_message ; ?>
+                                </div>
+                            <?php } ?>
+                            <form action="login.php" method="post">
                                 <div class="form-group">
                                     <label for="email">Email</label>
                                     <input class="form-control" type="email" id="email" name="email" placeholder="Enter Your Email" required> 
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="Password">Password</label>
-                                    <input class="form-control" type="password" id="pass" name="pass" placeholder="Enter Your Password" required>
+                                    <label for="password">Password</label>
+                                    <input class="form-control" type="password" id="password" name="password" placeholder="Enter Your Password" required>
                                 </div>
 
                                 <div class="form-group">
