@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>user records</title>
+    <title>user contact details</title>
     <meta charset="utf-8">    
     <?php include('common/header.php'); ?>
     <link rel="stylesheet" href="asset/css/style.css">
@@ -27,16 +27,16 @@
                                 <thead>
                                     <tr>
                                         <th>Sr. No.</th>    
-                                        <th>Firstname</th>
-                                        <th>Middlename</th>
-                                        <th>Lastname</th>
+                                        <th>Name</th>
                                         <th>Email</th>
+                                        <th>Mobile Number</th>
+                                        <th>Message</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php
-                                        $sql = "SELECT * FROM users";
+                                        $sql = "SELECT * FROM contacts ORDER BY id DESC";
                                         $result = mysqli_query($conn, $sql);
                                         
                                         if(mysqli_num_rows($result) > 0){
@@ -45,24 +45,24 @@
                                     ?>
                                                 <tr class="info">
                                                     <td>
-                                                    <?php echo $i; ?>
+                                                        <?= $i; ?>
                                                     </td>
                                                     <td>
-                                                        <?php echo $row['first_name']; ?>
+                                                        <?php echo $row['name']; ?>
                                                     </td>
                                                     <td>
-                                                        <?php echo $row['middle_name']; ?>
+                                                    <?php echo $row['email']; ?>
                                                     </td>
                                                     <td>
-                                                        <?php echo $row['last_name']; ?>
+                                                    <?php echo $row['mobile']; ?>
                                                     </td>
                                                     <td>
-                                                        <?php echo $row['email_id']; ?>
+                                                    <?php echo $row['message']; ?>
                                                     </td>
-                                                    <td>
-                                                        <a href="#" class="btn btn-info">Edit</a>&nbsp;&nbsp;
+                                                    <td width = "250px">
+                                                        <a href="<?php echo "edit-contact.php?id=".$row['id']; ?>" class="btn btn-info">Edit</a>&nbsp;&nbsp;
                                                         <a href="#" class="btn btn-primary">View</a>&nbsp;&nbsp;
-                                                        <a href="<?php echo "delete.php?id=".$row['id']; ?>" class="btn btn-danger">Delete</a>
+                                                        <a href="<?php echo "delete-contact.php?id=".$row['id']; ?>" class="btn btn-danger">Delete</a>
                                                     </td>
                                                 </tr>
                                     <?php
