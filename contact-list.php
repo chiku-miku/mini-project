@@ -28,14 +28,15 @@
                                     <tr>
                                         <th>Sr. No.</th>    
                                         <th>Firstname</th>
-                                        <th>Middlename</th>
                                         <th>Email</th>
+                                        <th>Mobile</th>
+                                        <th>Message</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php
-                                        $sql = "SELECT * FROM users";
+                                        $sql = "SELECT * FROM contacts";
                                         $result = mysqli_query($conn, $sql);                                                                     
                                         if(mysqli_num_rows($result) > 0){
                                             $i = 1;   
@@ -46,17 +47,19 @@
                                                         <?= $i; ?>
                                                     </td>
                                                     <td>
-                                                        <?php echo $row['first_name']; ?>
+                                                        <?= $row['first_name']; ?>
                                                     </td>
                                                     <td>
-                                                        <?= $row['middle_name']; ?>
-                                                    </td>
-                                                    
-                                                    <td>
-                                                        <?= $row['email_id']; ?>
+                                                        <?= $row['email']; ?>
                                                     </td>
                                                     <td>
-                                                        <a href="#" class="btn btn-info">Edit</a>&nbsp;&nbsp;
+                                                        <?= $row['mobile']; ?>
+                                                    </td>
+                                                    <td>
+                                                        <?= $row['message']; ?>
+                                                    </td>
+                                                    <td>
+                                                        <a href="<?php echo "edit-contact.php?id=" .$row ['id']; ?>" class="btn btn-info">Edit</a>&nbsp;&nbsp;
                                                         <a href="#" class="btn btn-primary">Update</a>&nbsp;&nbsp;
                                                         <a href="<?php echo "delete.php?id=" .$row ['id']; ?>" class="btn btn-danger">Delete</a>
                                                     </td>

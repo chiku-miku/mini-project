@@ -48,3 +48,20 @@
 p{
     text-align: justify;
 }
+
+
+.green{
+    background: green;
+    height: 25px;
+}
+
+.orange{
+    background: orange;
+    height: 25px;
+}
+
+.pink{
+    background: pink;
+    height: 25px;
+}
+
