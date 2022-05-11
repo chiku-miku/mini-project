@@ -1,5 +1,5 @@
 <?php
-    include "config.php";
+    include('config.php');
     if(isset($_POST['email']) && isset($_POST['password'])){
 
         $sql = "SELECT * FROM users WHERE email_id = '".$_POST['email']."' AND password = '".md5($_POST['password'])."'";

@@ -6,7 +6,7 @@
         // die();
 
         $sql = "INSERT INTO users (first_name, middle_name, last_name, password, gender, date_of_birth, email_id, mobile_no, caste, created_at) 
-        VALUES ('".$_POST['first_name']."', '".$_POST['middle_name']."', '".$_POST['last_name']."', md5('".$_POST['password']."'),  '".$_POST['gender']."', '".$_POST['date_of_birth']."', '".$_POST['email_id']."', '".$_POST['mobile_no']."', '".$_POST['caste']."', '".date('Y-m-d h:i:s')."')" ;
+        VALUES ('".$_POST['first_name']."', '".$_POST['middle_name']."', '".$_POST['last_name']."', md5('".$_POST['password']."'),  '".$_POST['gender']."', '".$_POST['date_of_birth']."', '".$_POST['email_id']."', '".$_POST['mobile_no']."', '".$_POST['caste']."', '".date('Y-m-d h:i:s')."')";
 
         if (mysqli_query($conn, $sql)) {
         echo "New record created successfully";

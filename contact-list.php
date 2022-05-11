@@ -61,7 +61,7 @@
                                                     </td>
                                                     <td width = "250px">
                                                         <a href="<?php echo "edit-contact.php?id=".$row['id']; ?>" class="btn btn-info">Edit</a>&nbsp;&nbsp;
-                                                        <a href="#" class="btn btn-primary">View</a>&nbsp;&nbsp;
+                                                        <a href="<?php echo "view.php?id=".$row['id']; ?>" class="btn btn-primary">View</a>&nbsp;&nbsp;
                                                         <a href="<?php echo "delete-contact.php?id=".$row['id']; ?>" class="btn btn-danger">Delete</a>
                                                     </td>
                                                 </tr>
@@ -83,7 +83,4 @@
     <!-- End -->
 </body>
 </html>
-
-
-
 
