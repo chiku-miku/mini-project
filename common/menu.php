@@ -7,21 +7,20 @@
             <li ><a href="index.php">Home</a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="contact.php">Contact</a></li>
-            <li><a href="signup.php">Signup</a></li>
-            <li><a href="login.php">Login</a></li>
-            <li><a href="user-list.php">User List</a></li>
-            <li><a href="contact-list.php">Contact List</a></li>
-            <li>
-                <div class="dropdown">
-                    <button class="dropbtn">Database Records 
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="user-list.php">User Signup</a>
-                        <a href="contact_list.php">Contacts</a>
-                    </div>
-                </div>
-            </li>
+
+            <!-- Before login urls -->
+            <?php if(!isset($_SESSION["id"])){ ?>
+                <li><a href="signup.php">Signup</a></li>
+                <li><a href="login.php">Login</a></li>
+            <?php } ?>
+
+            <!-- After login urls -->
+            <?php if(isset($_SESSION["id"])){ ?>
+                <li><a href="user-list.php">User List</a></li>
+                <li><a href="contact-list.php">Contact List</a></li>
+                <li><a href="dashboard.php">Dashboard</a></li>
+                <li><a href="logout.php">Logout(<?php echo $_SESSION["first_name"]; ?>)</a></li>
+            <?php } ?>
          </ul>
     </div>
 </nav>
