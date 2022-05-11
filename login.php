@@ -12,14 +12,13 @@
 
         if ($result && $rowCount > 0) {
             $queryResult = mysqli_fetch_assoc($result);
-            session_start();
             $_SESSION["id"] = $queryResult['id'];
+            $_SESSION["first_name"] = $queryResult['first_name'];
             header("Location: http://localhost/mini-project/dashboard.php");
         }
         mysqli_close($conn);
     }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
