@@ -22,9 +22,12 @@
                         <!-- <a href="user-list.php">User List</a> -->
 
                         <li><a href="user-list.php">User List</a></li>
+                        
+                        <li><a href="contact-list.php">Contact List</a></li>
+                        
                         <!-- <li><a href="contact-list.php">Contact List</a></li> -->
-                        <li><a href="dashboard.php">My Profile</a></li>
-                        <li><a href="profile.php">Edit Profile</a></li>
+                        <li><a href="dashboard.php">Personal Information</a></li>
+                        <li><a href="edit-user.php">Edit Profile</a></li>
                         <li><a href="logout.php">Logout</a></li>
                     </div>
 

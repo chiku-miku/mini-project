@@ -41,7 +41,7 @@
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <div class="panel panel-primary mt-30">
-                    <div class="panel-heading">User Details</div>
+                    <div class="panel-heading">Personal Information</div>
                     <div class="panel-body">
                         <div class="panel-group" style="overflow-x:auto;">
                             <table class="table table-bordered">
@@ -86,8 +86,6 @@
             </div>
         </div>
     </div>
-    <!-- Menu Start -->
-    <?php include('common/footer.php'); ?>
-    <!-- End -->
+>
 </body>
 </html>
