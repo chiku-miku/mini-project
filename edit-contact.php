@@ -67,7 +67,7 @@
 
                             <div class="form-group">
                                 <div class="">
-                                    <button type="submit" class="btn btn-warning">SUBMIT</button>
+                                    <button type="submit" class="btn btn-primary">Update</button>
                                 </div>
                             </div>
                         </form>
