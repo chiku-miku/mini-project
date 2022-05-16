@@ -47,7 +47,7 @@
                                                         <?= $i; ?>
                                                     </td>
                                                     <td>
-                                                        <?= $row['first_name']; ?>
+                                                        <?= $row['name']; ?>
                                                     </td>
                                                     <td>
                                                         <?= $row['email']; ?>
@@ -59,8 +59,8 @@
                                                         <?= $row['message']; ?>
                                                     </td>
                                                     <td>
-                                                        <a href="<?php echo "edit-contact.php?id=" .$row ['id']; ?>" class="btn btn-info">Edit</a>&nbsp;&nbsp;
-                                                        <a href="#" class="btn btn-primary">Update</a>&nbsp;&nbsp;
+                                                        <a href= "<?php echo "edit-contact.php?id=" .$row['id']; ?>" class="btn btn-warning">Edit</a>&nbsp;&nbsp;
+                                                        <a href="#" class="btn btn-primary">View</a>&nbsp;&nbsp;
                                                         <a href="<?php echo "delete.php?id=" .$row ['id']; ?>" class="btn btn-danger">Delete</a>
                                                     </td>
                                                 </tr>

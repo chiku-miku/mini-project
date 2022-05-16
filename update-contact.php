@@ -5,7 +5,7 @@
         // print_r($_POST);
         // die();
 
-         $sql = "UPDATE contacts SET first_name = '".$_POST['first_name']."', email = '".$_POST['email']."', mobile = '".$_POST['mobile']."', message = '".$_POST['message']."' WHERE id = '".$_POST['id']."' "; 
+         $sql = "UPDATE contacts SET name = '".$_POST['name']."', email = '".$_POST['email']."', mobile = '".$_POST['mobile']."', message = '".$_POST['message']."' WHERE id = '".$_POST['id']."' "; 
        
         if (mysqli_query($conn, $sql)) {
         echo " Rcord updated successfully";

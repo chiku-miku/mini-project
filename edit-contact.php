@@ -45,7 +45,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="name">Name</label>
-                                <input class="form-control" type="text" id="name" name="first_name" placeholder="Please Enter Your Name" value = "<?php echo $result['first_name']; ?>" required> 
+                                <input class="form-control" type="text" id="name" name="name" placeholder="Please Enter Your Name" value = "<?php echo $result['name']; ?>" required> 
                             </div>
 
                             <div class="form-group">
@@ -61,7 +61,7 @@
                             <div class="form-group">
                                 <label for="msg">Message</label>
                                 <div>
-                                    <textarea class="form-control" name="message" id="msg" cols="70" rows="6" placeholder="Please Enter Your Message"required><?php echo $result['message'];?></textarea>
+                                    <textarea class="form-control" name="message" id="message" cols="70" rows="6" placeholder="Please Enter Your Message"required><?php echo $result['message'];?></textarea>
                                 </div>
                             </div>
 
