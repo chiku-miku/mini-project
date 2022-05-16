@@ -14,6 +14,8 @@
         }
 
         mysqli_close($conn);
+    }else{
+        header("Location: http://localhost/mini-project/contact-list.php");
     }
 ?>
 
