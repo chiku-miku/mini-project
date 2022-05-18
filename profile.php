@@ -64,13 +64,12 @@
 			    					<label for = "female">Female</label>	
 								</div>
 
-								<div class="form-group">
-									<label for="date_of_birth"> Date of Birth : </label>
-									<div class="form-group">
-										<input type="Date" name="date_of_birth" id= "date_of_birth" required><br><br>
-									</div>
-								</div>
-
+                                <div class="form-group">
+                                        <label for="date_of_birth"> Date of Birth : </label>
+                                    <div class="form-group">
+                                        <input class="form-control" type="Date" name="date_of_birth" id= "date_of_birth" required>
+                                    </div>
+                        
                                 <div class="form-group">
                                     <label for="email_id">Email Id</label>
                                     <input class="form-control" type="email" id="email_id" name="email_id" placeholder="Please Enter Your Email Id" required> 
@@ -82,17 +81,17 @@
                                 </div>
 
 								<div class="form-group">
-									<label for="caste"> Caste :</label>
-									<select name="caste" id="caste">
-									<option selected disabled>Select Your Caste</option>
-									<option value="OPEN">OPEN</option>
-									<option value="OBC">OBC</option>
-									<option value="SC">SC</option>
-									<option value="SBC">SBC</option>
-									<option value="ST">ST</option>
-									<option value="NT">NT</option>
-									</select>
-								</div>
+                                    <label for="caste"> Caste :</label>
+                                    <select class="form-control" name="caste" id="caste">
+                                    <option selected disabled>Select Your Caste</option>
+                                    <option value="OPEN">OPEN</option>
+                                    <option value="OBC">OBC</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SBC">SBC</option>
+                                    <option value="ST">ST</option>
+                                    <option value="NT">NT</option>
+                                    </select>
+                                </div>
 
                                 <div class="form-group">
                                     <div class="">
