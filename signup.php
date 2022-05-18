@@ -5,12 +5,12 @@
         // print_r($_POST);
         // die();
 
-         $sql = "INSERT INTO users (first_name, middle_name, gender, date_of_birth, email_id, mobile_no, caste, created_at) 
-        VALUES ('".$_POST['first_name']."', '".$_POST['middle_name']."', '".$_POST['gender']."', '".$_POST['date_of_birth']."','".$_POST['email_id']."', '".$_POST['mobile_no']."', '".$_POST['caste']."', '".date('Y-m-d h:i:s')."')" ;
+         $sql = "INSERT INTO users (first_name, middle_name, last_name, password, gender, date_of_birth, email_id, mobile_no, caste, created_at) 
+        VALUES ('".$_POST['first_name']."', '".$_POST['middle_name']."',  '".$_POST['last_name']."', '".md5($_POST['password'])."', '".$_POST['gender']."', '".$_POST['date_of_birth']."','".$_POST['email_id']."', '".$_POST['mobile_no']."', '".$_POST['caste']."', '".date('Y-m-d h:i:s')."')" ;
 
         if (mysqli_query($conn, $sql)) {
-        echo "New record created successfully";
-        } else {
+          header("Location: http://localhost/mini-project/login.php");
+         } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }
 
@@ -50,7 +50,17 @@
 
                     <div class="form-group">
                       <label for="middle_name">Middle Name</label>
-                      <input class="form-control" type="text" id="middle_name" name="middle_name" placeholder="Please Enter Middle First Name" required> 
+                      <input class="form-control" type="text" id="middle_name" name="middle_name" placeholder="Please Enter Middle Name" required> 
+                    </div>
+
+                    <div class="form-group">
+                      <label for="last_name">Last Name</label>
+                      <input class="form-control" type="text" id="last_name" name="last_name" placeholder="Please Enter Last Name" required> 
+                    </div>
+
+                    <div class="form-group">
+                      <label for="pssword">Password</label>
+                      <input class="form-control" type="password" id="password" name="password" placeholder="Please Enter Password" required> 
                     </div>
 
                     <div class="form-group">
