@@ -58,7 +58,7 @@
                                                     <td>
                                                         <a href="#" class="btn btn-info">Edit</a>&nbsp;&nbsp;
                                                         <a href="<?php echo "view-user.php?id=" .$row ['id']; ?>"  class="btn btn-warning">View</a>&nbsp;&nbsp;
-                                                        <a href="<?php echo "delete.php?id=" .$row ['id']; ?>" class="btn btn-danger">Delete</a>
+                                                        <a href="<?php echo "delete-user.php?id=" .$row ['id']; ?>" class="btn btn-danger">Delete</a>
                                                     </td>
                                                 </tr>
                                     <?php

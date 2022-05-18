@@ -69,7 +69,7 @@
                                                     <td>
                                                         <a href="<?php echo "edit-contact.php?id=" .$row['id']; ?>" class="btn btn-info">Edit</a>&nbsp;&nbsp;
                                                         <a href= "<?php echo "view-contact.php?id=" .$row['id']; ?>" class="btn btn-warning">View</a>&nbsp;&nbsp;
-                                                        <a href="<?php echo "delete.php?id=" .$row ['id']; ?>" class="btn btn-danger">Delete</a>
+                                                        <a href="<?php echo "delete-contact.php?id=" .$row ['id']; ?>" class="btn btn-danger">Delete</a>
                                                     </td>
                                                 </tr>
                                     <?php
