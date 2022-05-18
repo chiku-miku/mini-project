@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Contact</title>
+    <title>User</title>
     <meta charset="utf-8">    
     <?php include('common/header.php'); ?>
     <link rel="stylesheet" href="asset/css/style.css">

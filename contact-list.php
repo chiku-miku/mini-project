@@ -20,9 +20,14 @@
             <div class="col-md-1"></div>
             <div class="col-md-10">
                 <div class="panel panel-primary mt-30">
-                    <div class="panel-heading">User List</div>
+                    <div class="panel-heading">Contact List</div>
                     <div class="panel-body">
                         <div class="panel-group">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <a href="add-contact.php" class="btn btn-success">Add Contact</a>
+                                </div>
+                            </div>
                             <table class="table">
                                 <thead>
                                     <tr>
@@ -59,8 +64,11 @@
                                                         <?= $row['message']; ?>
                                                     </td>
                                                     <td>
-                                                        <a href= "<?php echo "edit-contact.php?id=" .$row['id']; ?>" class="btn btn-warning">Edit</a>&nbsp;&nbsp;
-                                                        <a href="#" class="btn btn-primary">View</a>&nbsp;&nbsp;
+                                                        <?= $row['created_at']; ?>
+                                                    </td>
+                                                    <td>
+                                                        <a href="<?php echo "edit-contact.php?id=" .$row['id']; ?>" class="btn btn-info">Edit</a>&nbsp;&nbsp;
+                                                        <a href= "<?php echo "view-contact.php?id=" .$row['id']; ?>" class="btn btn-warning">View</a>&nbsp;&nbsp;
                                                         <a href="<?php echo "delete.php?id=" .$row ['id']; ?>" class="btn btn-danger">Delete</a>
                                                     </td>
                                                 </tr>
